@@ -1,130 +1,214 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Home">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillaume Girier - Productivity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .section-about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section-about img {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section-skills {
+            padding: 50px 20px;
+        }
+
+        .section-skills h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .skills-table th, .skills-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .skills-table th {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #555;
+            margin-top: 50px;
+        }
+    </style>
 </head>
-
-<style>
-  .container {
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .text {
-    font-size: 20px;
-    padding-left: 20px;
-    padding-top: 20%;
-    float: left;
-  }
-</style>
-
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
-        <div class="bottom-right">
-            <br> Guillaume Girier's page | Postdoc Researcher
-        </div>
-    </div>
+<header>
+    <h1>Guillaume Girier | Postdoc Researcher</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <table class="navigation">
+<section class="hero">
+    <h2>"Quote"</h2>
+    <p>- Me.</p>
+</section>
+
+<section class="section-about" id="about">
+    <img src="assets/Me.jpg" alt="Photo of Guillaume Girier">
+    <h2>Hello world!</h2>
+    <p>My name is Guillaume Girier, Ph.D, and I am currently a Postdoc researcher at the <a href="https://cobra.cs.cas.cz/"> Complex networks and brain dynamics group</a> (COBRA) in Prague.</p>
+</section>
+
+<section class="section-skills" id="skills">
+    <h2>My Skills</h2>
+    <table class="skills-table">
         <tr>
-            <td class="navigation">
-                <a class="current" title="Home Page" href=".">About</a>
-            </td>
-            <td class="navigation">
-                <a title="Experience" href="experience">Experience</a>
-            </td>
-            <td class="navigation">
-                <a title="Publications" href="publications">Publications</a> 
-            </td>
-            <td class="navigation">
-                <a title="Education" href="education">Education</a>
-            </td>
-            <td class="navigation">
-                <a title="Contacts" href="contacts">Contacts</a>
-            </td>
+            <th>Modelling</th>
+            <th>Data Analysis</th>
+        </tr>
+        <tr>
+            <td>Point, population neuron, microcircuit models</td>
+            <td>Big Data Analysis</td>
+        </tr>
+        <tr>
+            <td>Linear algebra, calculous</td>
+            <td>Time Series Analysis</td>
+        </tr>
+        <tr>
+            <td>Bifurcation Analysis & Numerical Continuation</td>
+            <td>Statistical Analysis</td>
+        </tr>
+        <tr>
+            <td>Slow-Fast decomposition</td>
+            <td>Classification & Machine Learning</td>
+        </tr>
+        <tr>
+            <td>Model fitting based on data</td>
+            <td>Dynamic Alignments</td>
+        </tr>
+        <tr>
+            <td>Neural Networks and Machine learning</td>
+            <td>Reccurence Structure Analysis</td>
         </tr>
     </table>
+</section>
 
-    <h1><font color="#D8A83A"> Hello world! </font></h1>
-
-    <div class="container">
-      <div class="image">
-        <img src="assets/Me.jpg" style="max-width: 25%; max-height:15%; float: left">
-      </div>
-      <div class="text">
-        <h1>&nbsp &nbsp </h1>
-      </div>
-    </div>
-
-    <p>
-	Last update : 23/01/2025.
-    </p>
-
-    <p> I welcome you to my professional website.
-	My name is Guillaume Girier, Ph.D, and I am currently a 
-	Postdoc research at the <a href="https://cobra.cs.cas.cz/">
-	Complex networks and brain dynamics group</a> (COBRA) in Praha.</p>
-
-    <p>
-	On this site, you will find detailed information on my academic background, my research and my scientific achievements. You will also be able to consult my curriculum vitae, my scientific publications as well as my contacts.
-    </p>
-
-    <h1><font color="#D8A83A"> Principal skills </font></h1>
-
-    <table>
-
-    <tr> <th><b><font size="10" color="#4863A0"> PROGRAMMATION </font></b></th> <th><b><font size="10" color="#4863A0"> DATA ANALYSIS </font></b></th> <th><b><font size="10" color="#4863A0"> LABORATORY </font></b></th> </tr>
-
-    <tr> <td>  &nbsp </td> <td> &nbsp  </td> <td>  &nbsp  </td> </tr>
-	    
-    <tr> <td> • Python / Cython / Jupyter Notebook </td> <td> • Big Data analysis </td> <td> • Immunostaining </td> </tr>
-	    
-    <tr> <td> • Matlab </td> <td> • Time series analysis </td> <td> • Western blot </td> </tr>
-
-    <tr> <td> • C </td> <td> • Statistical analysis </td> <td> • ELISA assay </td> </tr>
-
-    <tr> <td> • Bash </td> <td> • Classification and machine learning </td> <td> • Fluorescence microscopy </td> </tr>
-
-    <tr> <td> • R </td> <td> • Alignments by dynamic or heuristic programming </td> <td> • Electrical circuit studies  </td> </tr>
-
-    <tr> <td> • Mathematica </td> <td> • Recurrence Structure Analysis </td> <td> • Patch-Clamp set-up </td> </tr>
-	    
+<section class="section-skills" id="skills">
+    <table class="skills-table">
+        <tr>
+            <th>Programming</th>
+            <th>Laboratory</th>
+        </tr>
+        <tr>
+            <td>Python / Cython / Jupyter Notebook</td>
+            <td>Immunostaining</td>
+        </tr>
+        <tr>
+            <td>Matlab</td>
+            <td>Western blot</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Fluorescence Microscopy</td>
+        </tr>
+        <tr>
+            <td>Bash</td>
+            <td>Electrical Circuit</td>
+        </tr>
+        <tr>
+            <td>R</td>
+            <td>ELISA assay</td>
+        </tr>
+        <tr>
+            <td>Mathematica</td>
+            <td>Patch-Clamp</td>
+        </tr>
     </table>
+</section>
 
-    <table>
-
-    <tr> <th><b><font size="10" color="#4863A0"> MODELLING KNOWLEDGE </font></b></th> <th><b><font size="10" color="#4863A0"> LANGUAGES </font></b></th> </tr>
-
-    <tr> <td>  &nbsp </td> <td>  &nbsp </td> </tr>
-	    
-    <tr> <td> • Point neuron models : FitzHugh-Nagumo, Morris-Lecar, INa/Ik... </td> <td>  <b>French :</b> native language </td> </tr>
-
-    <tr> <td> • Differential equations study, linear algebra, matrix manipulations </td> <td>  <b>English :</b> B2 </td> </tr>
-
-    <tr> <td> • Slow-Fast study </td> <td>  <b>Spanish :</b> B1 </td>  </tr>
-
-    <tr> <td> • Numerical continuation, continuation based on real-time experiments </td> <td>  &nbsp </td> </tr>
-
-    <tr> <td> • Model creation from a data study </td> <td>  &nbsp </td> </tr>
-
-    <tr> <td> • Neural networks and machine learning </td> <td>  &nbsp </td> </tr>
-	    
-    </table>
-
-    <footer>
-        &copy; <a href="https://github.com/GuillaumeGirier">Guillaume Girier</a> 
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer>
+<footer>
+    <p>&copy; 2025 Guillaume Girier. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
