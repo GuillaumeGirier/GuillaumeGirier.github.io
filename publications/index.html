@@ -1,48 +1,137 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
-    <meta name="description" content="Publications">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Publications</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guillaume Girier - About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .section-about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section-about img {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section-skills {
+            padding: 50px 20px;
+        }
+
+        .section-skills h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .skills-table th, .skills-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .skills-table th {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #555;
+            margin-top: 50px;
+        }
+    </style>
+</head>
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
-        <div class="bottom-right">
-            <br> Guillaume Girier's page | Postdoc Researcher
-        </div>
-    </div>
+<header>
+    <h1>Guillaume Girier | Postdoc Researcher</h1>
+    <nav>
+        <ul>
+            <li><a class="current" title="Home Page" href=".">About</a></li>
+            <li><a title="Experience" href="experience">Experience</a></li>
+            <li><a title="Publications" href="publications">Publications</a></li>
+            <li><a title="Education" href="education">Education</a></li>
+            <li><a title="Contacts" href="contacts">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a title="Home Page" href=".">About</a>
-            </td>
-            <td class="navigation">
-                <a title="Experience" href="experience">Experience</a>
-            </td>
-            <td class="navigation">
-                <a class="current" title="Publications" href="publications">Publications</a> 
-            </td>
-            <td class="navigation">
-                <a title="Education" href="education">Education</a>
-            </td>
-            <td class="navigation">
-                <a title="Contacts" href="contacts">Contacts</a>
-            </td>
-        </tr>
-    </table>
+<section class="hero">
+    <h2>Publications</h2>
+</section>
 
     <h3><font color="#4863A0">Published : </font></h3>
     <p><FONT size="15pt"> 1. <I> From integrator to resonator neurons: A multiple-timescale scenario, </I> Guillaume Girier, Mathieu Desroches, Serafim Rodrigues. 2023. 
@@ -64,10 +153,9 @@
     <p><FONT size="15pt"> 1. <I> Metastable odotopic representations in mice olfactory bulb, </I> Guillaume Girier, Peter beim Graben, Tobias Ackels, Andreas Schaefer, 
 	Mathieu Desroches and Serafim Rodrigues </FONT></p>
 
-    <footer>
-        &copy; <a href="https://github.com/GuillaumeGirier">Guillaume Girier</a> 
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
-    </footer>
+<footer>
+    <p>&copy; 2025 Guillaume Girier. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
