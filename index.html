@@ -118,7 +118,25 @@
 
         .section-about {
             padding: 50px 20px;
-            text-align: center;
+        }
+        
+        .about-container {
+            display: flex;
+            align-items: flex-start; /* Aligne l'image et le texte au haut */
+            gap: 20px; /* Espacement entre l'image et le texte */
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: left; /* Alignement du texte à gauche */
+        }
+        
+        .about-container img {
+            max-width: 300px; /* Largeur maximale de l'image */
+            border-radius: 10px;
+            flex-shrink: 0; /* Empêche l'image de rétrécir */
+        }
+        
+        .about-text {
+            flex: 1; /* Le texte prend tout l'espace restant */
         }
 
         .section-about img {
@@ -182,25 +200,29 @@
 </section>
 
 <section class="section-about" id="about">
-    <img src="assets/Me.PNG" alt="Photo of Guillaume Girier">
-    <h2><br />&emsp;<center><font color="#D8A83A">HELLO WOLRD!</font></center><br /></h2>
-    <hr width="50%" size="2"><br />
-    <p><b>Guillaume Girier holds a PhD in Computational Neuroscience, awarded cum </br> 
-        laude in 2024, with a focus on investigating the excitatory thresholds of </br> 
-        single-neuron models through an integrative approach combining computational </br> 
-        modeling, simulations, and experimental validation.</b></p>
-    <p><b>He is currently a postdoctoral researcher in the <a href="https://cobra.cs.cas.cz/"> Complex networks</br>  
-        and brain dynamics group</a> (COBRA) in Prague, where his primary focus lies in</br> 
-        modeling epilepsy using neural mass models and detailed neuronal microcircuits.</br> 
-        His research aims to uncover the mechanistic underpinnings of epileptogenesis</br> 
-        and seizure dynamics by bridging theoretical frameworks with experimental data.</b></p>
-    <p><b>His overarching objective is to bridge computational modeling and experimental</br> 
-        neuroscience to create a bidirectional framework where models inform experiments,</br> 
-        and experimental findings refine the models. By establishing this iterative feedback</br> 
-        loop, his work seeks to consolidate knowledge between theoretical and experimental</br>  
-        approaches, enabling a deeper understanding of neural excitability and seizure</br> 
-        dynamics.</b></p>
-    <p><b>Last update: 25/01/2025</b></p>
+    <div class="about-container">
+        <img src="assets/Me.PNG" alt="Photo of Guillaume Girier">
+        <div class="about-text">
+            <h2><br />&emsp;<center><font color="#D8A83A">HELLO WOLRD!</font></center><br /></h2>
+            <hr width="50%" size="2"><br />
+            <p><b>Guillaume Girier holds a PhD in Computational Neuroscience, awarded cum </br> 
+                laude in 2024, with a focus on investigating the excitatory thresholds of </br> 
+                single-neuron models through an integrative approach combining computational </br> 
+                modeling, simulations, and experimental validation.</b></p>
+            <p><b>He is currently a postdoctoral researcher in the <a href="https://cobra.cs.cas.cz/"> Complex networks</br>  
+                and brain dynamics group</a> (COBRA) in Prague, where his primary focus lies in</br> 
+                modeling epilepsy using neural mass models and detailed neuronal microcircuits.</br> 
+                His research aims to uncover the mechanistic underpinnings of epileptogenesis</br> 
+                and seizure dynamics by bridging theoretical frameworks with experimental data.</b></p>
+            <p><b>His overarching objective is to bridge computational modeling and experimental</br> 
+                neuroscience to create a bidirectional framework where models inform experiments,</br> 
+                and experimental findings refine the models. By establishing this iterative feedback</br> 
+                loop, his work seeks to consolidate knowledge between theoretical and experimental</br>  
+                approaches, enabling a deeper understanding of neural excitability and seizure</br> 
+                dynamics.</b></p>
+            <p><b>Last update: 25/01/2025</b></p>
+        </div>
+    </div>
 </section>
 
 <h2><br />&emsp;<center><font color="#D8A83A">News</font></center><br /></h2>
