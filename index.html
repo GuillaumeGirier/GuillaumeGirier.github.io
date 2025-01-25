@@ -122,13 +122,25 @@
         
         .about-container {
             display: flex;
-            align-items: flex-start; /* Aligne l'image et le texte au haut */
-            gap: 20px; /* Espacement entre l'image et le texte */
+            align-items: flex-start;
+            gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            text-align: left; /* Alignement du texte à gauche */
+            text-align: left;
         }
-        
+
+        .about-images {
+            display: flex;
+            flex-direction: column; /* Affiche les images verticalement */
+            gap: 20px; /* Ajoute un espacement entre les images */
+        }
+
+        .about-images img {
+            max-width: 300px; /* Largeur maximale des images */
+            border-radius: 10px;
+            flex-shrink: 0; /* Empêche les images de se déformer */
+        }
+
         .about-container img {
             max-width: 300px; /* Largeur maximale de l'image */
             border-radius: 10px;
