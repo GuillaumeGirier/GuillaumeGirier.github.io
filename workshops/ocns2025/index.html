@@ -130,6 +130,11 @@
             cursor: pointer;
         }
 
+        .hidden-content {
+            display: none;
+            padding-top: 10px;
+        }
+        
         .section-about {
             padding: 50px 20px;
         }
@@ -200,6 +205,12 @@
 
         .skills-table th {
             background-color: #f4f4f4;
+        }
+
+        .presentation-title {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
         }
 
         footer {
@@ -313,25 +324,29 @@
             Centre de Recherche en Neurosciences de Lyon - Inserm / CNRS, France
         </td>
         <td>
-            <p class="centered-justified"><b>Expansion of epileptogenic networks via neuroplasticity in neural mass models</b></p><br />
-            <p class="centered-justified">Neuroplasticity refers to functional and structural changes in brain regions in
-            response to healthy and pathological activity. Activity dependent plasticity induced by
-            epileptic activity can involve healthy brain regions into the epileptogenic network by
-            perturbing their excitation/inhibition balance. In this article, we present a new neural mass
-            model, which accounts for neuroplasticity, for investigating the possible mechanisms
-            underlying the epileptogenic network expansion. Our multiple-timescale model is inspired
-            by physiological calcium-mediated synaptic plasticity and pathological extrasynaptic N-
-            methyl-D-aspartate (NMDA) dependent plasticity dynamics. The model highlights that
-            synaptic plasticity at excitatory connections and structural changes in the inhibitory system
-            can transform a healthy region into a secondary epileptic focus under recurrent seizures and
-            interictal activity occurring in the primary focus. Our results suggest that the latent period of
-            this transformation can provide a window of opportunity to prevent the expansion of
-            epileptogenic networks, formation of an epileptic focus, or other comorbidities associated
-            with epileptic activity.</p><br />
-            <p class="centered-justified">Reference: Köksal-Ersöz E, Benquet P, Wendling F (2024) Expansion of epileptogenic
-            networks via neuroplasticity in neural mass models. PLoS Comput Biol 20(12): e1012666. 
-            <a href="https://doi.org/10.1371/journal.pcbi.1012666">https://doi.org/10.1371/journal.pcbi.1012666</a>
+            <p class="presentation-title" onclick="toggleContent('content1')">
+                <b>Expansion of epileptogenic networks via neuroplasticity in neural mass models</b><br />
             </p>
+            <div id="content1" class="hidden-content">
+                <p class="centered-justified">Neuroplasticity refers to functional and structural changes in brain regions in
+                response to healthy and pathological activity. Activity dependent plasticity induced by
+                epileptic activity can involve healthy brain regions into the epileptogenic network by
+                perturbing their excitation/inhibition balance. In this article, we present a new neural mass
+                model, which accounts for neuroplasticity, for investigating the possible mechanisms
+                underlying the epileptogenic network expansion. Our multiple-timescale model is inspired
+                by physiological calcium-mediated synaptic plasticity and pathological extrasynaptic N-
+                methyl-D-aspartate (NMDA) dependent plasticity dynamics. The model highlights that
+                synaptic plasticity at excitatory connections and structural changes in the inhibitory system
+                can transform a healthy region into a secondary epileptic focus under recurrent seizures and
+                interictal activity occurring in the primary focus. Our results suggest that the latent period of
+                this transformation can provide a window of opportunity to prevent the expansion of
+                epileptogenic networks, formation of an epileptic focus, or other comorbidities associated
+                with epileptic activity.</p><br />
+                <p class="centered-justified">Reference: Köksal-Ersöz E, Benquet P, Wendling F (2024) Expansion of epileptogenic
+                networks via neuroplasticity in neural mass models. PLoS Comput Biol 20(12): e1012666. 
+                <a href="https://doi.org/10.1371/journal.pcbi.1012666">https://doi.org/10.1371/journal.pcbi.1012666</a>
+                </p>
+            </div>
         </td>
     </tr>
     <tr>
